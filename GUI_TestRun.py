@@ -113,11 +113,14 @@ while run:
                 for j in range(4):
                     if(grid[i][j] == 0): Full = False
             if(Full==False):
-                while(grid[temporary_x][temporary_y]!=0):
-                    temporary_x = random.randint(0,3)
-                    temporary_y = random.randint(0,3)
-                grid[temporary_x][temporary_y]=2
-
+                    while(grid[temporary_x][temporary_y]!=0):
+                        temporary_x = random.randint(0,3)
+                        temporary_y = random.randint(0,3)
+                    
+                    that = 2
+                    l = random.randint(1,10)
+                    if(l==10):that = 4
+                    grid[temporary_x][temporary_y]=that
 
 
 
